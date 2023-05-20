@@ -1,0 +1,14 @@
+ROS master: ลงทะเบียนชื่อ และค้นหาส่วนอื่นๆ ใน computation
+ROS topics : เป็นตัวแทนรับสาร ของnode มีเพียง publisher ที่ส่ง
+ไปยัง subscriber เท่านั้น
+ROS service:  คล้ายกับ topics แต่ต้องมีผู้ขอและผู้ให้ ของที่ให้ก็ขึ้นอยู่
+กับสิ่งที่ขอว่าขออะไร
+
+topics กับ message ต่างกัน: topic คือหัวเรื่องที่ไว้คุยกัน 
+message คือตัวกลางสื่อสารระหว่าง node
+
+ความต่างในการใช้งาน ros topics และ ros service:
+ros topics เป็นเหมือนหัวข้อที่มีเนื้อหาข้างในคือ message โดย
+มีnode ที่เป็น publisher เท่านั้นที่ส่งได้
+แต่ ros service จะต้องมีการ request กันระหว่าง node จึงจะมีการ
+response กลับไป
